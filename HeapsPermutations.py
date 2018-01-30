@@ -9,7 +9,6 @@ def heapPermutation(lst, n):
     # Swap function
     def swap(list, index1, index2):
         list[index1], list[index2] = list[index2], list[index1]
-
     if n == 1:
         print(lst)
     else:
@@ -19,7 +18,6 @@ def heapPermutation(lst, n):
                 swap(lst, i, n - 1)
             else:
                 swap(lst, 0, n - 1)
-
         heapPermutation(lst, n - 1)
 
 # Test 1
