@@ -40,7 +40,7 @@ def allPermutations(data, n):
         else:
             for i in range(0, n-1):
                 heapPermutation(data, n-1)
-                if n%2 == 0:
+                if n % 2 == 0:
                     swap(data, i, n-1)
                 else:
                     swap(data, 0, n-1)
