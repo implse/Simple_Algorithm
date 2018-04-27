@@ -1,4 +1,4 @@
-# Binary Search
+# Binary Search : Time Complexity O(log n)
 
 def binary_search(list, item):
     low = 0
