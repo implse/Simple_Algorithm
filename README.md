@@ -10,6 +10,8 @@ Decrease and Conquer technique.
     - move either towards left half or right half of the list.
 - If value is not found, return -1.
 
+Time Complexity :  O(log n)
+
 ## Selection Sort
 
 - Scan the entire list to find the smallest number.
