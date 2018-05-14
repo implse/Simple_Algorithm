@@ -1,8 +1,11 @@
 # Kadane Algorithm (Largest Sum Contigous Sub Array)
 
+from sys import maxsize
+
 # Find the contiguous sub array with the maximum sum
 def findmaxSumSubArray(arr):
-    max_so_far = arr[0]
+    # max_so_far = arr[0]
+    max_so_far = maxsize * -1
     max_ending_here = 0
     start = 0
     end = 0
@@ -20,9 +23,10 @@ def findmaxSumSubArray(arr):
 
 # Find the maximum sum of contiguous sub array
 def findMaxSum(arr):
-        max_so_far = arr[0]
+        # max_so_far = arr[0]
+        max_so_far = maxsize * -1
         max_ending_here = 0
-        for i in range(1,len(arr)):
+        for i in range(len(arr)):
             max_ending_here += arr[i]
             if max_so_far < max_ending_here:
                 max_so_far = max_ending_here
@@ -39,3 +43,8 @@ print('The maximum sum subarray is : {}'.format(findmaxSumSubArray(a)))
 b = [-5, 6, 7, 1, 4, -8, 16]
 print('The maximum subarray sum is : {}'.format(findMaxSum(b)))
 print('The maximum sum subarray is : {}'.format(findmaxSumSubArray(b)))
+
+# Test 3
+c =  [-13, -3, -25, -20, -3, -16, -23, -12, -5, -22, -15, -4, -7]
+print('The maximum subarray sum is : {}'.format(findMaxSum(c)))
+print('The maximum sum subarray is : {}'.format(findmaxSumSubArray(c)))
