@@ -29,6 +29,8 @@ Time complexity : O(n^2)
 
 ## Quick Sort
 
-Divide and Conquer algorithm technique.
+Divide and Conquer technique.
+Quick Sort is recursive.
+Very efficient for large data sets.
 
-Time Complexity :
+Time Complexity : O(n log(n))
