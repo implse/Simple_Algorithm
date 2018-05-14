@@ -1,6 +1,6 @@
 # Kadane Algorithm (Largest Sum Contigous Sub Array)
 
-# Find the subarray with the maximum sum in an array.
+# Find the contiguous sub array with the maximum sum
 def findmaxSumSubArray(arr):
     max_so_far = arr[0]
     max_ending_here = 0
@@ -18,7 +18,7 @@ def findmaxSumSubArray(arr):
             s = i + 1
     return arr[start:end+1]
 
-# Find the maximum sum in an array
+# Find the maximum sum of contiguous sub array
 def findMaxSum(arr):
         max_so_far = arr[0]
         max_ending_here = 0
