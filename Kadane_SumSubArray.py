@@ -22,7 +22,7 @@ def findmaxSumSubArray(arr):
 def findMaxSum(arr):
         max_so_far = arr[0]
         max_ending_here = 0
-        for i in range(len(arr)):
+        for i in range(1,len(arr)):
             max_ending_here += arr[i]
             if max_so_far < max_ending_here:
                 max_so_far = max_ending_here
@@ -33,9 +33,9 @@ def findMaxSum(arr):
 # Test 1
 a = [4, -3, -2, 2, 3, 1, -2, -3, 4, 2, -6, -3, -1, 3, 1, 2]
 print('The maximum subarray sum is : {}'.format(findMaxSum(a)))
-print('The maximul sum subarray is : {}'.format(findmaxSumSubArray(a)))
+print('The maximum sum subarray is : {}'.format(findmaxSumSubArray(a)))
 
 # Test 2
 b = [-5, 6, 7, 1, 4, -8, 16]
 print('The maximum subarray sum is : {}'.format(findMaxSum(b)))
-print('The maximul sum subarray is : {}'.format(findmaxSumSubArray(b)))
+print('The maximum sum subarray is : {}'.format(findmaxSumSubArray(b)))
