@@ -4,16 +4,14 @@
 def heapify(arr, sz, i):
 
     largest = i  # Initialize largest as root
-    l = 2 * i + 1     # left = 2*i + 1
-    r = 2 * i + 2     # right = 2*i + 2
+    l = 2 * i + 1     # left child
+    r = 2 * i + 2     # right child
 
-    # See if left child of root exists and is
-    # greater than root
+    # See if left child of root exists and is greater than root
     if l < sz and arr[i] < arr[l]:
         largest = l
 
-    # See if right child of root exists and is
-    # greater than root
+    # See if right child of root exists and is greater than root
     if r < sz and arr[largest] < arr[r]:
         largest = r
 
