@@ -3,15 +3,15 @@
 # Heapify
 def heapify(arr, sz, i):
 
-    largest = i  # Initialize largest as root
-    l = 2 * i + 1     # left child
-    r = 2 * i + 2     # right child
+    largest = i  # Initialize root
+    l = 2 * i + 1  # left child
+    r = 2 * i + 2  # right child
 
-    # See if left child of root exists and is greater than root
+    # Check if left child is greater than parent
     if l < sz and arr[i] < arr[l]:
         largest = l
 
-    # See if right child of root exists and is greater than root
+    # Check if right child is greater than parent
     if r < sz and arr[largest] < arr[r]:
         largest = r
 
