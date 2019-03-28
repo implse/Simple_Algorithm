@@ -6,15 +6,10 @@
 
 # Iterative Solution
 def powerSet_iterative(word):
-    # This loop is to take out all duplicate
     letter_list = list(word)
-    power_set = [" "]
-
-    for i in range(len(letter_list)):
-        # Prevent an infinite loop
-        ln = len(power_set)
-        for j in range(ln):
-            power_set.append(power_set[j]+letter_list[i])
+    power_set = [[]]
+    for i in (letter_list):
+        power_set.extend([subset + [i] for subset in power_set])
     return power_set
 
 # Test
