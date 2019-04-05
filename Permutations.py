@@ -1,6 +1,7 @@
 def permutations(lst):
     result = list()
-    permutionsHelper(lst, result, chosen = [])
+    chosen = list()
+    permutionsHelper(lst, result, chosen)
     return result
 
 def permutionsHelper(lst, result, chosen = []):
