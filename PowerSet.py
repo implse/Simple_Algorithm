@@ -22,6 +22,7 @@ def powerSet_recursive(word):
     # Base case
     if not word:
         return [[]]
+    # Recursive case
     res_subsets = powerSet_recursive(word[1:])
     return res_subsets + [[word[0]]+i for i in res_subsets]
 
