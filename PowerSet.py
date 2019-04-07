@@ -1,4 +1,4 @@
-# powerSet When an string is passed in the function, it will return all the subsets and combination in an array
+# Write a function that return the powerset of a given string.
 
 # powerSet("abcde")
 
@@ -8,7 +8,7 @@
 def powerSet_iterative(word):
     letter_list = list(word)
     power_set = [[]]
-    for i in (letter_list):
+    for i in letter_list:
         power_set.extend([subset + [i] for subset in power_set])
     return power_set
 
