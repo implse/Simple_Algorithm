@@ -10,7 +10,7 @@ def base_decode(string):
         num = num * BASE_LEN + BASE_DICT[char]
     return num
 
-# Base_62 Dncoder
+# Base_62 Decoder
 def base_encode(num):
     if not num:
         return BASE_ALPH[0]
