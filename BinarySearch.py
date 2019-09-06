@@ -5,7 +5,7 @@ def binary_search(list, item):
     high = len(list) - 1
 
     while low <= high:
-        mid = (low + high) // 2
+        mid = (low + high) // 2 # Avoid Overflow
         value = list[mid]
         if value == item:
             return "The item %d is at index: %d" % (item, mid)

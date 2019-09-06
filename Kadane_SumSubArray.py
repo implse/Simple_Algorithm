@@ -1,4 +1,4 @@
-# Kadane Algorithm (Largest Sum Contigous Sub Array)
+# Kadane Algorithm (Largest Sum Contiguous Sub Array)
 
 from sys import maxsize
 
