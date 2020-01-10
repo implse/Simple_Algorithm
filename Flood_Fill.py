@@ -37,6 +37,7 @@ def flood_fill(row, col, color, fill_color):
     visited.append([row, col])
     moves = neighbours(row, col)
 
+    # Recursive DFS
     for move in moves:
         if move not in visited:
             flood_fill(move[0], move[1], color, fill_color)
