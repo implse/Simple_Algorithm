@@ -34,7 +34,11 @@ def manacher(string):
 str = "mollakayakokomassa"
 print(manacher(str))
 
-# Brute Force
+# Brute Force O(n^3)
+def is_palindrome(string):
+    reverse = string[::-1]
+    return reverse == string
+
 def longest_palindrome(string):
     ln = len(string)
     max_size_palindrome = 0
@@ -42,13 +46,12 @@ def longest_palindrome(string):
     for i in range(ln - 1):
         for j in range(i + 1, ln):
             str1 = string[i:j]
-            str2 = str1[::-1]
-            if str1 == str2 and len(str1) > max_size_palindrome:
+            if is_palindrome(str1) and len(str1) > max_size_palindrome:
                 max_size_palindrome = len(str1)
                 palindrome = str1
-
     print(palindrome)
     return max_size_palindrome
 
 str = "mollakayakokomassa"
 print(longest_palindrome(str))
+print(is_palindrome("b"))
