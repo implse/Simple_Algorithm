@@ -54,4 +54,3 @@ def longest_palindrome(string):
 
 str = "mollakayakokomassa"
 print(longest_palindrome(str))
-print(is_palindrome("b"))
